@@ -1,411 +1,383 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>戦うエンジニアArrayMap合同会社</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="header" class="header">
-      <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="imgs/logo.png" alt="#"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#show-menu"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="show-menu">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#hiw">How it's Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#wcs">What Clients Say</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item .search-container">
-                <a class="nav-link search" href="#"
-                  ><i class="fas fa-search"></i
-                ></a>
-                <form>
-                  <input type="search" placeholder="Search" />
-                </form>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div id="home" class="slider">
-      <div id="main_slider" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#main_slider" data-slide-to="0" class="active"></li>
-          <li data-target="#main_slider" data-slide-to="1"></li>
-          <li data-target="#main_slider" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="imgs/slide1.jpg" alt="slider_img" />
-            <div class="ovarlay_slide_cont">
-              <h2>We love おにぎり</h2>
-              <h4>Maintenance service</h4>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years
-              </p>
-              <a class="blue_bt" href="#">See Our Service</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="imgs/slide1.jpg" alt="slider_img" />
-            <div class="ovarlay_slide_cont">
-              <h2>We love カレー</h2>
-              <h4>Maintenance service</h4>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years
-              </p>
-              <a class="blue_bt" href="#">See Our Service</a>
-            </div>
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#main_slider"
-          role="button"
-          data-slide="prev"
-        >
-          <img src="imgs/left.png" alt="#" />
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#main_slider"
-          role="button"
-          data-slide="next"
-        >
-          <img src="imgs/right.png" alt="#" />
-        </a>
-      </div>
-    </div>
-    <div id="about" class="about_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <h4>ABOUT ArrayMap</h4>
-            <h3 style="text-transform: none !important">
-              プログラム書いて、誰かの役に立ちます。
-            </h3>
-            <p>
-            ArrayMap合同会社<br>
-              代表 田中拓也
-            </p>
-          </div>
-          <div class="col-md-6 offset-md-1">
-            <div class="full text_align_center">
-              <img class="img-responsive" src="imgs/about.png" alt="#" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      id="hiw"
-      class="hiw_section layout_padding"
-      style="background: #1a2428;"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3 class="white_font">How it's Works</h3>
-            <p class="white_font">
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            </p>
-          </div>
-          <div class="col-md-5"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/blog1.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Book Online</h3>
-          </div>
-          <div class="col-md-4">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/blog2.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Confirmation</h3>
-          </div>
-          <div class="col-md-4">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/blog3.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Work Status</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="service" class="hiw_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3>OUR SERVICES</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-          </div>
-          <div class="col-md-5"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-8 service_blog">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/s1.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Book Online</h3>
-          </div>
-          <div class="col-md-4 service_blog">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/s2.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Confirmation</h3>
-          </div>
-          <div class="col-md-4 service_blog">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/s3.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Work Status</h3>
-          </div>
-          <div class="col-md-4 service_blog">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/s4.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Work Status</h3>
-          </div>
-          <div class="col-md-4 service_blog">
-            <img
-              class="margin_top_30 img-responsive"
-              src="imgs/s5.jpg"
-              alt="#"
-            />
-            <h3 class="blog_head">Work Status</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      id="contact"
-      class="hiw_section layout_padding"
-      style="background: #eeefef;"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3>Booking Online</h3>
-          </div>
-          <div class="col-md-5"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-7">
-            <div class="contact-form">
-              <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="Phone Number" />
-                <input type="text" placeholder="Type of Service" />
-                <textarea placeholder="Message"></textarea>
-                <input type="submit" value="SEND" />
-              </form>
-            </div>
-          </div>
-          <div class="col-md-5 text_align_center">
-            <img class="img-responsive" src="imgs/man_cartoon.png" alt="#" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="wcs" class="hiw_section layout_padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text_align_center">
-            <h3>Our Client Say</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-          </div>
-          <div class="col-md-5"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-11">
-            <div class="full testimonial_blog">
-              <p>Jackrok</p>
-              <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscureContrary to popular belief, Lorem Ipsum
-                is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="subcribe">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <h3>Newsletter</h3>
-            <p>
-              dolor sit amet, consectetur adipiscing elit.<br />Ut elit tellus,
-              luctus nec ullamcorper
-            </p>
-          </div>
-          <div class="col-md-8 col-sm-6">
-            <form>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your Email Address"
-              />
-              <button>Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="footer_blog_section">
-              <img src="imgs/logo.png" alt="#" />
-              <p style="margin-top: 5px;">
-                It is a long established fact that a reader will be distracted
-                by the readable content..
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-12">
-            <div class="item">
-              <h4 class="text-uppercase">Navigation</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Features</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="item">
-              <h4 class="text-uppercase">Contact Info</h4>
-              <p><strong>Corporate Office Address:</strong></p>
-              <p>
-                <img src="imgs/phone_icon.png" alt="#" /> 1234 River Street New
-                York, NY 36524
-              </p>
-              <p><strong>Customer Service:</strong></p>
-              <p><img src="imgs/location.png" alt="#" /> 987 654 3210</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="item">
-              <h4 class="text-uppercase">Discover</h4>
-              <ul>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">How It Works</a></li>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copyright text-center">
-        <p>
-          Copyright 2019 Design by
-          <a href="https://html.design">Free Html Templates</a>
-        </p>
-      </div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(function() {
-        "use strict";
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        var winH = $(window).height();
+	<title>ArrayMap合同会社:小規模システムに特化した開発会社</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/tooplate-style.css">
 
-        $("header").height(winH);
+	<script>
+		var renderPage = true;
 
-        $("header .container > div").css(
-          "top",
-          winH / 2 - $("header .container > div").height() / 2
-        );
+	if(navigator.userAgent.indexOf('MSIE')!==-1
+		|| navigator.appVersion.indexOf('Trident/') > 0){
+   		/* Microsoft Internet Explorer detected in. */
+   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+   		renderPage = false;
+	}
+	</script>
+</head>
 
-        $(".navbar ul li a.search").on("click", function(e) {
-          e.preventDefault();
-        });
-        $(".navbar a.search").on("click", function() {
-          $(".navbar form").fadeToggle();
-        });
+<body>
+	<!-- Loader -->
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
 
-        $(".navbar ul.navbar-nav li a").on("click", function(e) {
-          var getAttr = $(this).attr("href");
+	<!-- Page Content -->
+	<div class="container-fluid tm-main">
+		<div class="row tm-main-row">
 
-          e.preventDefault();
-          $("html").animate({ scrollTop: $(getAttr).offset().top }, 1000);
-        });
-      });
-    </script>
-  </body>
+			<!-- Sidebar -->
+			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
+									<i class="fas fa-home tm-nav-fa-icon"></i>
+									<span>Introduction</span>
+								</a>
+							</li>
+              <!--
+							<li>
+								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2" data-page-type="carousel">
+									<i class="fas fa-map tm-nav-fa-icon"></i>
+									<span>Our Products</span>
+								</a>
+							</li>
+              -->
+							<li>
+								<a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
+									<i class="fas fa-users tm-nav-fa-icon"></i>
+									<span>Our Company</span>
+								</a>
+							</li>
+							<li>
+								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
+									<i class="fas fa-comments tm-nav-fa-icon"></i>
+									<span>Contact Us</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+
+					<!-- section 1 -->
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">ArrayMap合同会社</h1></header>
+							<p class="mb-5 tm-font-big">インターネット上で、役立つシステムはまだまだあるはず。誰かを楽にするために、ゴールなきサービスを日々追求します。</p>
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a>
+							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
+						</div>
+					</section>
+
+					<!-- section 2 -->
+          <!--
+					<section id="tm-section-2" class="tm-section tm-section-carousel">
+						<div>
+							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>
+							<div class="tm-img-container">
+								<div class="tm-img-slider">
+									<a href="img/gallery-img-01.jpg" class="tm-slider-img"><img src="img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/gallery-img-02.jpg" class="tm-slider-img"><img src="img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/gallery-img-03.jpg" class="tm-slider-img"><img src="img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/gallery-img-04.jpg" class="tm-slider-img"><img src="img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/gallery-img-05.jpg" class="tm-slider-img"><img src="img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
+									<a href="img/gallery-img-06.jpg" class="tm-slider-img"><img src="img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
+								</div>
+							</div>
+						</div>
+					</section>
+          -->
+					<!-- section 3 -->
+					<section id="tm-section-3" class="tm-section">
+						<div class="row mb-4">
+							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>
+						</div>
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+									<i class="fas fa-code tm-icon-circled tm-icon-media"></i>
+									<div class="media-body">
+										<h3>Webシステム開発</h3>
+										<p>PHP, nodejs, vue, MySQL ...技術は問いません。<br>全ては誰かを楽にするため、楽しませるため、</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+									<i class="fas fa-camera fa-sm tm-icon-circled tm-icon-media"></i>
+                  <!--
+									<i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>
+                  -->
+									<div class="media-body">
+										<h3>ハードウェア関連システム開発</h3>
+										<p>RaspberryPiおよび関連装置を用いたシステム開発、カメラを用いた監視などを得意としています。</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media"></i>
+									<div class="media-body">
+										<h3>モバイルアプリ開発<br>デスクトップアプリ開発</h3>
+										<p>主にAndroid, Electronを扱います。</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+								<div class="media tm-bg-transparent-black tm-border-white">
+                  <i class="fas fa-wrench mr-4 tm-icon-circled tm-icon-media"></i>
+									<div class="media-body">
+										<h3>その他</h3>
+										<p>小規模で小回りの利く開発、請け負います。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- section 4 -->
+					<section id="tm-section-4" class="tm-section">
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row mb-4">
+								<div class="col-sm-12">
+									<header><h2 class="tm-text-shadow">Contact Us</h2></header>
+								</div>
+							</div>
+							<div class="row tm-page-4-content">
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+									<div class="contact_message">
+										<form action="mail.php" method="post" class="contact-form">
+											<div class="form-group">
+												<input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required>
+											</div>
+											<div class="form-group">
+												<input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required>
+											</div>
+											<div class="form-group">
+												<textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+											</div>
+											<button type="submit" class="btn tm-btn-submit tm-btn ml-auto">Submit</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12 tm-contact-col">
+									<div class="tm-address-box">
+										<p>「こんなことできないかな？」<br>「面倒なことをとにかくシステムに任せたい」<br>などありましたらご相談ください。<br>問題分析からお手伝いいたします。</p>
+										  <address>
+											  143-0027 東京都大田区中馬込<br>3-2-3-302
+										  </address>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>	<!-- .tm-content -->
+				<footer class="footer-link">
+					<p class="tm-copyright-text">Copyright &copy; 2020 ArrayMap LLC.</p>
+				</footer>
+			</div>	<!-- row -->
+		</div>
+		<div id="preload-01"></div>
+		<div id="preload-02"></div>
+		<div id="preload-03"></div>
+		<div id="preload-04"></div>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
+
+		<script>
+
+		var sidebarVisible = false;
+		var currentPageID = "#tm-section-1";
+
+		// Setup Carousel
+		function setupCarousel() {
+
+			// If current page isn't Carousel page, don't do anything.
+			if($('#tm-section-2').css('display') == "none") {
+			}
+			else {	// If current page is Carousel page, set up the Carousel.
+
+				var slider = $('.tm-img-slider');
+				var windowWidth = $(window).width();
+
+				if (slider.hasClass('slick-initialized')) {
+					slider.slick('destroy');
+				}
+
+				if(windowWidth < 640) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 1,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else if(windowWidth < 992) {
+					slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 2,
+	              		slidesToScroll: 1
+	              	});
+				}
+				else {
+					// Slick carousel
+	              	slider.slick({
+	              		dots: true,
+	              		infinite: false,
+	              		slidesToShow: 3,
+	              		slidesToScroll: 2
+	              	});
+				}
+
+				// Init Magnific Popup
+				$('.tm-img-slider').magnificPopup({
+				  delegate: 'a', // child items selector, by clicking on it popup will open
+				  type: 'image',
+				  gallery: {enabled:true}
+				  // other options
+				});
+      		}
+  		}
+
+  		// Setup Nav
+  		function setupNav() {
+  			// Add Event Listener to each Nav item
+	     	$(".tm-main-nav a").click(function(e){
+	     		e.preventDefault();
+
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+
+		    	setupCarousel();
+		    	setupFooter();
+
+		    	// Hide the nav on mobile
+		    	$("#tmSideBar").removeClass("show");
+		    });
+  		}
+
+  		function changePage(currentNavItem) {
+  			// Update Nav items
+  			$(".tm-main-nav a").removeClass("active");
+     		currentNavItem.addClass("active");
+
+	    	$(currentPageID).hide();
+
+	    	// Show current page
+	    	currentPageID = currentNavItem.data("page");
+	    	$(currentPageID).fadeIn(1000);
+
+	    	// Change background image
+	    	var bgImg = currentNavItem.data("bgImg");
+	    	$.backstretch("img/" + bgImg);
+  		}
+
+  		// Setup Nav Toggle Button
+  		function setupNavToggle() {
+
+			$("#tmMainNavToggle").on("click", function(){
+				$(".sidebar").toggleClass("show");
+			});
+  		}
+
+  		// If there is enough room, stick the footer at the bottom of page content.
+  		// If not, place it after the page content
+  		function setupFooter() {
+
+  			var padding = 100;
+  			var footerPadding = 40;
+  			var mainContent = $("section"+currentPageID);
+  			var mainContentHeight = mainContent.outerHeight(true);
+  			var footer = $(".footer-link");
+  			var footerHeight = footer.outerHeight(true);
+  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
+  			var windowHeight = $(window).height();
+
+  			if(totalPageHeight > windowHeight){
+  				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
+  				footer.css("bottom", footerHeight + "px");
+  			}
+  			else {
+  				$(".tm-content").css("margin-bottom", "0");
+  				footer.css("bottom", "20px");
+  			}
+  		}
+
+  		// Everything is loaded including images.
+      	$(window).on("load", function(){
+
+      		// Render the page on modern browser only.
+      		if(renderPage) {
+				// Remove loader
+		      	$('body').addClass('loaded');
+
+		      	// Page transition
+		      	var allPages = $(".tm-section");
+
+		      	// Handle click of "Continue", which changes to next page
+		      	// The link contains data-nav-link attribute, which holds the nav item ID
+		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
+		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+
+			    if(linkToAnotherPage != null) {
+
+			    	linkToAnotherPage.on("click", function(){
+			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		$("a" + navItemToHighlight).click();
+			    	});
+			    }
+
+		      	// Hide all pages
+		      	allPages.hide();
+
+		      	$("#tm-section-1").fadeIn();
+
+		     	// Set up background first page
+		     	var bgImg = $("#tmNavLink1").data("bgImg");
+
+		     	$.backstretch("img/" + bgImg, {fade: 500});
+
+		     	// Setup Carousel, Nav, and Nav Toggle
+			    setupCarousel();
+			    setupNav();
+			    setupNavToggle();
+			    setupFooter();
+
+			    // Resize Carousel upon window resize
+			    $(window).resize(function() {
+			    	setupCarousel();
+			    	setupFooter();
+			    });
+      		}
+		});
+
+		</script>
+	</body>
 </html>
