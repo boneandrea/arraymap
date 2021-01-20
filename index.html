@@ -1,5 +1,6 @@
 <?php
 session_start();
+include("util.php");
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -116,7 +117,7 @@ session_start();
 						<div class="row">
 							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-code tm-icon-circled tm-icon-media"></i>
+									<i class="fas fa-code tm-icon-circled tm-icon-media tm-sub-nav" data-nav-link="#tmNavLink2" data-page="#tm-section-6"></i>
 									<div class="media-body">
 										<h3>Webシステム開発</h3>
 										<p>PHP, nodejs, Vue, MySQL ...技術は問いません。<br>全ては誰かを楽にするため、楽しませるため。</p>
@@ -125,7 +126,7 @@ session_start();
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-camera fa-sm tm-icon-circled tm-icon-media"></i>
+									<i class="fas fa-camera fa-sm tm-icon-circled tm-icon-media tm-sub-nav" data-nav-link="#tmNavLink2" data-page="#tm-section-7"></i>
                   <!--
 									     <i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>
                   -->
@@ -137,7 +138,7 @@ session_start();
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media tm-sub-nav" data-nav-link="#tmNavLink2" data-page="#tm-section-6"></i>
+									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media tm-sub-nav" data-nav-link="#tmNavLink2" data-page="#tm-section-8"></i>
 									<div class="media-body">
 										<h3>モバイルアプリ開発<br>デスクトップアプリ開発</h3>
 										<p>主にAndroid, Electronを扱います。</p>
@@ -146,7 +147,7 @@ session_start();
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 								<div class="media tm-bg-transparent-black tm-border-white">
-                  <i class="fas fa-wrench mr-4 tm-icon-circled tm-icon-media"></i>
+                  <i class="fas fa-wrench mr-4 tm-icon-circled tm-icon-media tm-sub-nav" data-nav-link="#tmNavLink2" data-page="#tm-section-9"></i>
 									<div class="media-body">
 										<h3>その他</h3>
 										<p>小規模で小回りの利く開発、請け負います。</p>
@@ -206,8 +207,8 @@ session_start();
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
-          <?php include("section-6.html")?>
-				</div>	<!-- .tm-content -->
+          <?=readSectionTemplates()?>
+        </div>	<!-- .tm-content -->
 				<footer class="footer-link">
 					<p class="tm-copyright-text">Copyright &copy; 2020 ArrayMap LLC.</p>
 				</footer>
