@@ -119,7 +119,7 @@ session_start();
 									<i class="fas fa-code tm-icon-circled tm-icon-media"></i>
 									<div class="media-body">
 										<h3>Webシステム開発</h3>
-										<p>PHP, nodejs, vue, MySQL ...技術は問いません。<br>全ては誰かを楽にするため、楽しませるため、</p>
+										<p>PHP, nodejs, Vue, MySQL ...技術は問いません。<br>全ては誰かを楽にするため、楽しませるため。</p>
 									</div>
 								</div>
 							</div>
@@ -137,7 +137,7 @@ session_start();
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media"></i>
+									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media tm-sub-nav"></i>
 									<div class="media-body">
 										<h3>モバイルアプリ開発<br>デスクトップアプリ開発</h3>
 										<p>主にAndroid, Electronを扱います。</p>
@@ -197,12 +197,16 @@ session_start();
 						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">ArrayMap合同会社</h1></header>
 							<p class="mb-5 tm-font-big">代表社員　田中　拓也</p>
-							<p class="mb-5 tm-font-normal">メーカー系制御プログラマからWeb業界へ転身。<br>各種業務アプリ、セキュリティサイト、ITナレッジサイトなどの構築と運用を手がける。</p>
+							<p class="mb-5 tm-font-normal">メーカー系制御プログラマからWeb業界へ転身。<br>フリーランスとして各種業務アプリ、セキュリティ関連サイト、ITナレッジサイトなどの構築と運用を手がける。</p>
 							<p class="mb-5 tm-font-big">沿革</p>
-							<p class="mb-5 tm-font-normal">2020.11.20 設立</p>
+							<p class="mb-5 tm-font-normal">2005.02.01 個人事業開始</p>
+							<p class="mb-5 tm-font-normal">2020.11.20 ArrayMap合同会社設立</p>
+							<p class="mb-5 tm-font-big">主要取引先</p>
+							<p class="mb-5 tm-font-normal">アグスネット株式会社、AIクレジット株式会社</p>
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
+          <?php include("section-6.html")?>
 				</div>	<!-- .tm-content -->
 				<footer class="footer-link">
 					<p class="tm-copyright-text">Copyright &copy; 2020 ArrayMap LLC.</p>
@@ -280,6 +284,20 @@ session_start();
   			// Add Event Listener to each Nav item
 	     	$(".tm-main-nav a").click(function(e){
 	     		e.preventDefault();
+
+		    	var currentNavItem = $(this);
+		    	changePage(currentNavItem);
+
+		    	setupCarousel();
+		    	setupFooter();
+
+		    	// Hide the nav on mobile
+		    	$("#tmSideBar").removeClass("show");
+		    });
+
+	     	  $(".tm-sub-nav").click(function(e){
+	     		    e.preventDefault();
+              alert(3);
 
 		    	var currentNavItem = $(this);
 		    	changePage(currentNavItem);
