@@ -137,7 +137,7 @@ session_start();
 							</div>
 							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
 								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media tm-sub-nav"></i>
+									<i class="fas fa-mobile-alt mr-4 tm-icon-circled tm-icon-media tm-sub-nav" data-nav-link="#tmNavLink2" data-page="#tm-section-6"></i>
 									<div class="media-body">
 										<h3>モバイルアプリ開発<br>デスクトップアプリ開発</h3>
 										<p>主にAndroid, Electronを扱います。</p>
@@ -281,36 +281,32 @@ session_start();
 
   	 // Setup Nav
   	 function setupNav() {
+
+         const _changePage=function(self){
+
+		    	   const currentNavItem = $(self);
+		    	   changePage(currentNavItem);
+
+		    	   setupCarousel();
+		    	   setupFooter();
+
+		    	   // Hide the nav on mobile
+		    	   $("#tmSideBar").removeClass("show");
+		     };
+
   			 // Add Event Listener to each Nav item
 	     	 $(".tm-main-nav a").click(function(e){
 	     		   e.preventDefault();
-
-		    	   const currentNavItem = $(this);
-		    	   changePage(currentNavItem);
-
-		    	   setupCarousel();
-		    	   setupFooter();
-
-		    	   // Hide the nav on mobile
-		    	   $("#tmSideBar").removeClass("show");
-		     });
-
+             _changePage(this);
+         });
 	     	 $(".tm-sub-nav").click(function(e){
 	     		   e.preventDefault();
-             alert(3);
-
-		    	   const currentNavItem = $(this);
-		    	   changePage(currentNavItem);
-
-		    	   setupCarousel();
-		    	   setupFooter();
-
-		    	   // Hide the nav on mobile
-		    	   $("#tmSideBar").removeClass("show");
-		     });
+             _changePage(this);
+         });
   	 }
 
   	 function changePage(currentNavItem) {
+         console.log(currentNavItem);
   			 // Update Nav items
   			 $(".tm-main-nav a").removeClass("active");
      		 currentNavItem.addClass("active");
