@@ -1,8 +1,17 @@
+<?php
+$items=[
+    [
+        "title"=>"レガシーシステムの改善",
+        "description"=>"Dockerを用いた開発環境のポータブル化<br>テストのない環境からテストのできる環境",
+    ],
+];
+?>
 <section id="tm-section-9" class="tm-section">
 	<div class="ml-auto">
 		<header class="mb-4"><h1 class="tm-text-shadow">その他</h1></header>
-		<p class="mb-5 tm-font-big">レガシーシステムの改善</p>
-		<p class="mb-5 tm-font-normal">Dockerを用いた開発環境のポータブル化</p>
-		<p class="mb-5 tm-font-normal">テストのない環境からテストのできる環境</p>
+    <?php foreach($items as $item):?>
+      <p class="mb-5 tm-font-big"><?=$item["title"]?></p>
+      <p class="mb-5 tm-font-normal"><?=$item["description"]?></p>
+    <?php endforeach;?>
 	</div>
 </section>
