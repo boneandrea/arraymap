@@ -18,7 +18,7 @@ session_start();
 	<link rel="stylesheet" href="css/tooplate-style.css">
 
 	<script>
-		var renderPage = true;
+		const renderPage = true;
 
 	if(navigator.userAgent.indexOf('MSIE')!==-1
 		|| navigator.appVersion.indexOf('Trident/') > 0){
@@ -225,8 +225,8 @@ session_start();
 
 		<script>
 
-		var sidebarVisible = false;
-		var currentPageID = "#tm-section-1";
+		const sidebarVisible = false;
+		let currentPageID = "#tm-section-1";
 
 		// Setup Carousel
 		function setupCarousel() {
@@ -236,8 +236,8 @@ session_start();
 			}
 			else {	// If current page is Carousel page, set up the Carousel.
 
-				var slider = $('.tm-img-slider');
-				var windowWidth = $(window).width();
+				const slider = $('.tm-img-slider');
+				const windowWidth = $(window).width();
 
 				if (slider.hasClass('slick-initialized')) {
 					slider.slick('destroy');
@@ -285,7 +285,7 @@ session_start();
 	     	$(".tm-main-nav a").click(function(e){
 	     		e.preventDefault();
 
-		    	var currentNavItem = $(this);
+		    	const currentNavItem = $(this);
 		    	changePage(currentNavItem);
 
 		    	setupCarousel();
@@ -299,7 +299,7 @@ session_start();
 	     		    e.preventDefault();
               alert(3);
 
-		    	var currentNavItem = $(this);
+		    	const currentNavItem = $(this);
 		    	changePage(currentNavItem);
 
 		    	setupCarousel();
@@ -322,7 +322,7 @@ session_start();
 	    	$(currentPageID).fadeIn(1000);
 
 	    	// Change background image
-	    	var bgImg = currentNavItem.data("bgImg");
+	    	const bgImg = currentNavItem.data("bgImg");
 	    	$.backstretch("img/" + bgImg);
   		}
 
@@ -338,14 +338,14 @@ session_start();
   		// If not, place it after the page content
   		function setupFooter() {
 
-  			var padding = 100;
-  			var footerPadding = 40;
-  			var mainContent = $("section"+currentPageID);
-  			var mainContentHeight = mainContent.outerHeight(true);
-  			var footer = $(".footer-link");
-  			var footerHeight = footer.outerHeight(true);
-  			var totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
-  			var windowHeight = $(window).height();
+  			const padding = 100;
+  			const footerPadding = 40;
+  			const mainContent = $("section"+currentPageID);
+  			const mainContentHeight = mainContent.outerHeight(true);
+  			const footer = $(".footer-link");
+  			const footerHeight = footer.outerHeight(true);
+  			const totalPageHeight = mainContentHeight + footerHeight + footerPadding + padding;
+  			const windowHeight = $(window).height();
 
   			if(totalPageHeight > windowHeight){
   				$(".tm-content").css("margin-bottom", footerHeight + footerPadding + "px");
@@ -366,17 +366,17 @@ session_start();
 		      	$('body').addClass('loaded');
 
 		      	// Page transition
-		      	var allPages = $(".tm-section");
+		      	const allPages = $(".tm-section");
 
 		      	// Handle click of "Continue", which changes to next page
 		      	// The link contains data-nav-link attribute, which holds the nav item ID
 		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
-		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
+		      	const linkToAnotherPage = $("a.tm-btn[data-nav-link]");
 
 			    if(linkToAnotherPage != null) {
 
 			    	linkToAnotherPage.on("click", function(){
-			    		var navItemToHighlight = linkToAnotherPage.data("navLink");
+			    		const navItemToHighlight = linkToAnotherPage.data("navLink");
 			    		$("a" + navItemToHighlight).click();
 			    	});
 			    }
@@ -387,7 +387,7 @@ session_start();
 		      	$("#tm-section-1").fadeIn();
 
 		     	// Set up background first page
-		     	var bgImg = $("#tmNavLink1").data("bgImg");
+		     	const bgImg = $("#tmNavLink1").data("bgImg");
 
 		     	$.backstretch("img/" + bgImg, {fade: 500});
 
