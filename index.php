@@ -204,7 +204,7 @@ include("define.php");
 							<p class="mb-5 tm-font-normal">2005.02.01 個人事業開始</p>
 							<p class="mb-5 tm-font-normal">2020.11.20 ArrayMap合同会社設立</p>
 							<p class="mb-5 tm-font-big">主要取引先</p>
-							<p class="mb-5 tm-font-normal">AIクレジット株式会社、アグスネット株式会社</p>
+							<p class="mb-5 tm-font-normal">AIクレジット株式会社、株式会社ブイモール</p>
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
