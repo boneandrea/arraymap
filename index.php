@@ -1,6 +1,7 @@
 <?php
 session_start();
 include("util.php");
+include("define.php");
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -53,25 +54,25 @@ include("util.php");
 							  <li>
 								  <a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
 									  <i class="fas fa-home tm-nav-fa-icon"></i>
-									  <span>Introduction</span>
+									  <span><?=$Introduction?></span>
 								  </a>
 							  </li>
 							  <li>
 								  <a href="#company" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
 									  <i class="fas fa-users tm-nav-fa-icon"></i>
-									  <span>Our Company</span>
+									  <span><?=$OurCompany?></span>
 								  </a>
 							  </li>
 							  <li>
 								  <a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
 									  <i class="fas fa-comments tm-nav-fa-icon"></i>
-									  <span>Contact Us</span>
+									  <span><?=$Contact?></span>
 								  </a>
 							  </li>
 							  <li>
 								  <a href="#about" class="scrolly" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-5">
                     <i class="fas fa-user tm-nav-fa-icon"></i>
-									  <span>About Us</span>
+									  <span><?=$AboutUs?></span>
 								  </a>
 							  </li>
 						  </ul>
@@ -162,7 +163,7 @@ include("util.php");
 						<div class="tm-bg-transparent-black tm-contact-box-pad">
 							<div class="row mb-4">
 								<div class="col-sm-12">
-									<header><h2 class="tm-text-shadow">Contact Us</h2></header>
+									<header><h2 class="tm-text-shadow"><?=$Contact?></h2></header>
 								</div>
 							</div>
 							<div class="row tm-page-4-content">
