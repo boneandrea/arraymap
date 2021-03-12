@@ -1,12 +1,16 @@
 <?php
 $items=[
     [
-        "title"=>"S社様 賃貸物件検索システム",
-        "description"=>"専用端末とQRコードを用いたゲーム機設置管理システム。",
+        "title"=>'Q社様 技術情報交換サイト',
+        "description"=>"技術情報、社内情報システムサイトのフロントエンド/バックエンドを担当。",
     ],
     [
         "title"=>'<a href="http://www.aguse.jp">www.aguse.jp</a>',
         "description"=>"Webサイトのセキュリティ情報を調査するサイト。",
+    ],
+    [
+        "title"=>"S社様 賃貸物件検索システム",
+        "description"=>"専用端末とQRコードを用いたゲーム機設置管理システム。",
     ],
     [
         "title"=>"C社様 飲食店向けサービス・情報比較メディア",
@@ -21,10 +25,18 @@ $items=[
 <section id="tm-section-6" class="tm-section">
 	<div class="ml-auto">
 		<header class="mb-4"><h1 class="tm-text-shadow">Webシステム開発</h1></header>
+    <p>関わったサービスの一部です。</p>
     <?php foreach($items as $item):?>
       <p class="mb-5 tm-font-big"><?=$item["title"]?></p>
       <p class="mb-5 tm-font-normal"><?=$item["description"]?></p>
     <?php endforeach;?>
     <hr><p class="mb-5 tm-font-normal">その他多数のメディアサイトおよび業務用サイトの開発、運用サポートを行っております。</p>
+		<header class="mb-4"><h1 class="tm-text-shadow">技術的バックグラウンド</h1></header>
+    <p class="mb-5 tm-font-big">開発言語等</p>
+    <p class="mb-5 tm-font-normal">サーバサイド: PHP, Node.js, Java</p>
+    <p class="mb-5 tm-font-normal">フロントエンド: Vue.js, React</p>
+    <p class="mb-5 tm-font-normal">フレームワーク：CakePHP, Laravel, Express</p>
+    <p class="mb-5 tm-font-big">周辺技術</p>
+    <p class="mb-5 tm-font-normal">Docker, MySQL, Linux管理一般</p>
 	</div>
 </section>
