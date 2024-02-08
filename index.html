@@ -1,9 +1,3 @@
-<?php
-exit;
-session_start();
-include("util.php");
-include("define.php");
-?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -55,25 +49,25 @@ include("define.php");
 							  <li>
 								  <a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
 									  <i class="fas fa-home tm-nav-fa-icon"></i>
-									  <span><?=$Introduction?></span>
+									  <span>Introduction</span>
 								  </a>
 							  </li>
 							  <li>
 								  <a href="#company" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
 									  <i class="fas fa-users tm-nav-fa-icon"></i>
-									  <span><?=$OurCompany?></span>
+									  <span>Our Company</span>
 								  </a>
 							  </li>
 							  <li>
 								  <a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
 									  <i class="fas fa-comments tm-nav-fa-icon"></i>
-									  <span><?=$Contact?></span>
+									  <span>Contact</span>
 								  </a>
 							  </li>
 							  <li>
 								  <a href="#about" class="scrolly" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-5">
                     <i class="fas fa-user tm-nav-fa-icon"></i>
-									  <span><?=$AboutUs?></span>
+									  <span>About Us</span>
 								  </a>
 							  </li>
 						  </ul>
@@ -164,7 +158,7 @@ include("define.php");
 						<div class="tm-bg-transparent-black tm-contact-box-pad">
 							<div class="row mb-4">
 								<div class="col-sm-12">
-									<header><h2 class="tm-text-shadow"><?=$Contact?></h2></header>
+									<header><h2 class="tm-text-shadow">Contact</h2></header>
 								</div>
 							</div>
 							<div class="row tm-page-4-content">
@@ -209,7 +203,71 @@ include("define.php");
 							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
-          <?=readSectionTemplates()?>
+          <section id="tm-section-6" class="tm-section">
+	<div class="ml-auto">
+		<header class="mb-4"><h1 class="tm-text-shadow">Webシステム開発</h1></header>
+    <p>関わったサービスの一部です。</p>
+          <p class="mb-5 tm-font-big">Q社様 技術情報交換サイト</p>
+      <p class="mb-5 tm-font-normal">技術情報、社内情報システムサイトのフロントエンド/バックエンドを担当。</p>
+          <p class="mb-5 tm-font-big"><a href="http://www.aguse.jp">www.aguse.jp</a></p>
+      <p class="mb-5 tm-font-normal">Webサイトのセキュリティ情報を調査するサイト。</p>
+          <p class="mb-5 tm-font-big">S社様 賃貸物件検索システム</p>
+      <p class="mb-5 tm-font-normal">専用端末とQRコードを用いたゲーム機設置管理システム。</p>
+          <p class="mb-5 tm-font-big">C社様 飲食店向けサービス・情報比較メディア</p>
+      <p class="mb-5 tm-font-normal">飲食店向けのサービスを「無料」で比較・検討し資料請求できるサービス。</p>
+          <p class="mb-5 tm-font-big">I社様 働き方メディア</p>
+      <p class="mb-5 tm-font-normal">多様な働き方のサイト「新しい働き方」が注目を集めています。パラレルキャリア・リモートワークなどの実態に触れるメディア。</p>
+        <hr><p class="mb-5 tm-font-normal">その他多数のメディアサイトおよび業務用サイトの開発、運用サポートを行っております。</p>
+		<header class="mb-4"><h1 class="tm-text-shadow">技術的バックグラウンド</h1></header>
+    <p class="mb-5 tm-font-big">開発言語等</p>
+    <p class="mb-5 tm-font-normal">サーバサイド: PHP, Node.js, Java</p>
+    <p class="mb-5 tm-font-normal">フロントエンド: Vue.js, React</p>
+    <p class="mb-5 tm-font-normal">フレームワーク：CakePHP, Laravel, Express</p>
+    <p class="mb-5 tm-font-big">周辺技術</p>
+    <p class="mb-5 tm-font-normal">Docker, MySQL, mongodb, Linux管理一般</p>
+	</div>
+</section>
+<section id="tm-section-6" class="tm-section">
+	<div class="ml-auto">
+		<header class="mb-4"><h1 class="tm-text-shadow">Webシステム開発</h1></header>
+          <p class="mb-5 tm-font-big">S社様 賃貸物件検索システム</p>
+      <p class="mb-5 tm-font-normal">専用端末とQRコードを用いたゲーム機設置管理システム。</p>
+          <p class="mb-5 tm-font-big">S1社様 ゲーム機管理システム</p>
+      <p class="mb-5 tm-font-normal">専用端末とQRコードを用いたゲーム機設置管理システム。</p>
+    	</div>
+</section>
+<section id="tm-section-7" class="tm-section">
+  <div class="ml-auto">
+    <header class="mb-4"><h1 class="tm-text-shadow">ハードウェア関連システム開発</h1></header>
+    <p class="mb-5 tm-font-normal">RaspberryPi/Arduino等を用いたシステム開発。サンプル作成からお手伝いいたします。</p>
+          <p class="mb-5 tm-font-big">電光掲示板管理システム</p>
+      <p class="mb-5 tm-font-normal">RaspberryPiを用いた電光掲示板管理システム</p>
+          <p class="mb-5 tm-font-big">T社様　バッテリー管理システム</p>
+      <p class="mb-5 tm-font-normal">LinuxマイクロアプライアンスサーバMA-E350を用いて、大容量バッテリーの充放電を管理するシステム</p>
+          <p class="mb-5 tm-font-big">混雑監視システム</p>
+      <p class="mb-5 tm-font-normal">RaspberryPiと小型カメラを使用して、、プライバシーに配慮して混雑状況を監視するシステム</p>
+    		<header class="mb-4"><h1 class="tm-text-shadow">技術的バックグラウンド</h1></header>
+    <p class="mb-5 tm-font-big">デバイス制御</p>
+    <p class="mb-5 tm-font-normal">C, Java</p>
+	</div>
+</section>
+<section id="tm-section-8" class="tm-section">
+  <div class="ml-auto">
+    <header class="mb-4"><h1 class="tm-text-shadow">モバイルアプリ開発</h1></header>
+          <p class="mb-5 tm-font-big">C社様 ゲーム機管理システム</p>
+      <p class="mb-5 tm-font-normal">Android専用端末とQRコードを用いたゲーム機設置/廃棄管理システム。</p>
+          <p class="mb-5 tm-font-big">I社様 冷蔵庫内容物　鮮度管理および購買促進システム</p>
+      <p class="mb-5 tm-font-normal">冷蔵庫内の商品の鮮度管理を行い、消費期限切れの警告、同一商品の購入時期の通知を行うAndroidアプリ。</p>
+      </div>
+</section>
+<section id="tm-section-9" class="tm-section">
+	<div class="ml-auto">
+		<header class="mb-4"><h1 class="tm-text-shadow">その他</h1></header>
+    <p class="mb-5 tm-font-normal">開発の支援作業なども得意としています。</p>
+          <p class="mb-5 tm-font-big">レガシーシステムの改善</p>
+      <p class="mb-5 tm-font-normal">Dockerを用いた開発環境のポータブル化<br>テストのない環境からテストのできる環境</p>
+    	</div>
+</section>
         </div>	<!-- .tm-content -->
 				<footer class="footer-link">
 					<p class="tm-copyright-text">Copyright &copy; 2020 ArrayMap LLC.</p>
